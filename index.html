@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- EDIT: page title and description (shown in search results and link previews) -->
+  <title>Camilo | Supply Chain Analyst</title>
+  <meta name="description" content="Camilo, supply chain analyst. Projects in demand planning, inventory optimization, and logistics analytics." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a href="#top" class="brand">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="6" cy="16" r="3.5"/><circle cx="26" cy="8" r="3.5"/><circle cx="26" cy="24" r="3.5"/><path d="M9 15 L22.5 9 M9 17 L22.5 23"/></svg>
+        <!-- EDIT: your name -->
+        <span>Camilo</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO / ABOUT ============ -->
+    <section class="hero" id="about">
+      <svg class="hero-network" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g class="routes">
+          <path d="M80 480 C 260 420, 320 260, 520 240" />
+          <path d="M520 240 C 700 220, 760 120, 980 110" />
+          <path d="M520 240 C 680 300, 820 420, 1080 430" />
+          <path d="M80 480 C 300 560, 700 560, 1080 430" />
+          <path d="M980 110 C 1060 220, 1100 320, 1080 430" />
+          <path d="M240 140 C 360 160, 440 200, 520 240" />
+        </g>
+        <g class="nodes">
+          <circle cx="80" cy="480" r="6" />
+          <circle cx="240" cy="140" r="5" />
+          <circle cx="520" cy="240" r="8" />
+          <circle cx="980" cy="110" r="6" />
+          <circle cx="1080" cy="430" r="7" />
+        </g>
+        <circle class="shipment" r="4"><animateMotion dur="9s" repeatCount="indefinite" path="M80 480 C 260 420, 320 260, 520 240 C 700 220, 760 120, 980 110" /></circle>
+      </svg>
+
+      <div class="container hero-inner">
+        <p class="eyebrow mono">Supply Chain Analyst</p>
+        <!-- EDIT: headline -->
+        <h1>Hi, I'm Camilo.<br /><span class="muted">I turn supply chain data into better decisions.</span></h1>
+        <!-- EDIT: short intro, 2 to 3 sentences -->
+        <p class="lead">
+          I work at the intersection of operations and analytics: forecasting demand,
+          right-sizing inventory, and finding cost and service improvements across the
+          network. This site collects projects that show how I approach those problems.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+
+        <!-- EDIT: quick facts. Delete any you don't want. -->
+        <dl class="facts">
+          <div><dt>Based in</dt><dd>City, Country</dd></div>
+          <div><dt>Focus</dt><dd>Planning &amp; Analytics</dd></div>
+          <div><dt>Experience</dt><dd>X+ years</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section-head">
+          <span class="stage mono">01 &middot; Projects</span>
+          <h2>Selected work</h2>
+          <p>Case studies and analyses. Each card links to a write-up, notebook, or dashboard.</p>
+        </header>
+
+        <div class="cards">
+          <!--
+            HOW TO ADD A PROJECT
+            Copy one <article class="card"> ... </article> block below, paste it,
+            and edit the text and links. Status options for the badge:
+              status-live     -> "Delivered"   (finished)
+              status-transit  -> "In transit"  (in progress)
+              status-planned  -> "Planned"     (not started)
+          -->
+
+          <article class="card">
+            <div class="card-top">
+              <span class="tag mono">PRJ-001</span>
+              <span class="status status-planned">Planned</span>
+            </div>
+            <h3>Demand Forecasting Model</h3>
+            <p>Placeholder. Describe the problem, your approach, and the result in two or three sentences, ideally with one number (e.g. "cut forecast error by 18%").</p>
+            <ul class="chips">
+              <li>Python</li><li>Time series</li><li>Forecasting</li>
+            </ul>
+            <div class="card-links">
+              <a href="#" class="link-arrow">Read case study</a>
+              <a href="#" class="link-muted">Code</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <span class="tag mono">PRJ-002</span>
+              <span class="status status-planned">Planned</span>
+            </div>
+            <h3>Inventory Optimization</h3>
+            <p>Placeholder. For example: safety stock and reorder point analysis across SKUs, balancing service level against carrying cost.</p>
+            <ul class="chips">
+              <li>Excel</li><li>ABC/XYZ</li><li>Safety stock</li>
+            </ul>
+            <div class="card-links">
+              <a href="#" class="link-arrow">Read case study</a>
+              <a href="#" class="link-muted">Dashboard</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <span class="tag mono">PRJ-003</span>
+              <span class="status status-planned">Planned</span>
+            </div>
+            <h3>Logistics Network Dashboard</h3>
+            <p>Placeholder. For example: an interactive view of lane costs, on-time delivery, and carrier performance.</p>
+            <ul class="chips">
+              <li>Power BI</li><li>SQL</li><li>KPIs</li>
+            </ul>
+            <div class="card-links">
+              <a href="#" class="link-arrow">Read case study</a>
+              <a href="#" class="link-muted">Live demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <header class="section-head">
+          <span class="stage mono">02 &middot; Skills</span>
+          <h2>Toolkit</h2>
+          <p>What I bring to a supply chain team.</p>
+        </header>
+
+        <!-- EDIT: replace with your own skills. Copy a .skill-group block to add a category. -->
+        <div class="skills">
+          <div class="skill-group">
+            <h3>Planning &amp; Operations</h3>
+            <ul>
+              <li>Demand planning &amp; forecasting</li>
+              <li>Inventory management</li>
+              <li>S&amp;OP support</li>
+              <li>Supplier performance</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Analytics</h3>
+            <ul>
+              <li>KPI design &amp; reporting</li>
+              <li>Cost-to-serve analysis</li>
+              <li>Scenario modeling</li>
+              <li>Root cause analysis</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools</h3>
+            <ul class="chips">
+              <li>Excel</li><li>SQL</li><li>Python</li><li>Power BI</li><li>Tableau</li><li>SAP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container contact">
+        <header class="section-head">
+          <span class="stage mono">03 &middot; Contact</span>
+          <h2>Let's connect</h2>
+          <p>Open to conversations about supply chain analytics, new roles, and collaborations.</p>
+        </header>
+
+        <!-- EDIT: put your real links here. Delete any you don't use. -->
+        <ul class="contact-list">
+          <li>
+            <a href="mailto:you@example.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              <span><strong>Email</strong>you@example.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+              <span><strong>LinkedIn</strong>linkedin.com/in/your-profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/your-username" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.5-4-2-6-2.5M15 21v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+              <span><strong>GitHub</strong>github.com/your-username</span>
+            </a>
+          </li>
+          <li>
+            <!-- Put your resume PDF in the assets folder with this name -->
+            <a href="assets/resume.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>
+              <span><strong>Resume</strong>Download PDF</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Camilo</p>
+      <p class="mono route-line">Origin &rarr; Analysis &rarr; Decision</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
